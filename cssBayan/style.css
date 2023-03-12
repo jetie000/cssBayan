@@ -60,17 +60,19 @@ img{
     max-height: 0;
 }
 
-.bayan-item:hover > .bayan-title > .bayan-img{
-    transition: 1s;
-    max-height: 20em;
+@media (hover:hover) {
+    .bayan-item:hover > .bayan-title > .bayan-img{
+        transition: 1s;
+        max-height: 20em;
+    }
+
+    .bayan:hover .bayan-title {
+        color: black;
+    }
 }
 
 .bayan-item:active {
     opacity: 0.5;
-}
-
-.bayan:hover .bayan-title {
-    color: black;
 }
 
 .bayan-input {
@@ -105,17 +107,19 @@ img{
     transition: .5s;
 }
 
-.bayan-item:hover > .bayan-title > .plus {
-    transform:rotate(45deg);
-    max-height: 10em;
-    transition: 0.3s;
-}
+@media (hover:hover) {
+    .bayan-item:hover > .bayan-title > .plus {
+        transform:rotate(45deg);
+        max-height: 10em;
+        transition: 0.3s;
+    }
 
-.bayan:hover > .bayan-item > .bayan-input:checked ~ .bayan-title > .plus {
-    transform:rotate(45deg);
-    transition: 0.3s;
-}
+    .bayan:hover > .bayan-item > .bayan-input:checked ~ .bayan-title > .plus {
+        transform:rotate(45deg);
+        transition: 0.3s;
+    }
 
-.bayan:hover .bayan-title .plus{
-    max-height: 20em;
+    .bayan:hover .bayan-title .plus{
+        max-height: 20em;
+    }
 }
